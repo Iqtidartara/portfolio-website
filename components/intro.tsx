@@ -4,8 +4,8 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+import { BsArrowRight, BsInstagram } from "react-icons/bs";
+
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -31,11 +31,11 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/portfolio.jpg"
-              alt="Iqtdar"
-              width="392"
-              height="392"
-              quality="15"
+              src="/hero1 (3).jpg"
+              alt="Iqtidar"
+              width={392}
+              height={390}
+              quality="100"
               priority={true}
               className="h-54 w-54 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
@@ -63,7 +63,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span>Hi, I am Iqtidar Hussain!</span>{" "}<br/>
-        <span>Full-Stack web developer.</span>
+        <span>Front-End Developer .</span>
       </motion.h1>
 
       <motion.div
@@ -76,7 +76,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-4 rounded-full outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -88,25 +88,24 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="https://www.designify.design/"
           download
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Suscribe our plan
         </a>
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="www.linkedin.com/in/iqtidar-tara-2329b8283"
+          href="https://www.instagram.com/iqtidar_hussain_code/"
          
           target="_blank"
         >
-          <BsLinkedin />
+          <BsInstagram />
         </a>
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          href="https://github.com/Iqtidartara/"
           target="_blank"
         >
           <FaGithubSquare />

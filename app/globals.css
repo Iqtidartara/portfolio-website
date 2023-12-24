@@ -13,3 +13,11 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+.background{
+  background-color: #ab4b83;
+background-image: linear-gradient(225deg, #ab4b83 0%, #2B86C5 50%, #784BA0 100%);
+
+}
+.darkBackground{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+}
